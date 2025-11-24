@@ -49,7 +49,7 @@ export default function ActivityCard({ activity }: ActivityCardProps) {
         {activity.images.length > 0 && (
           <div className="relative aspect-video rounded-lg overflow-hidden neumorphic-inner">
             <Image
-              src={activity.images[currentImageIndex]}
+              src={getImagePath(activity.images[currentImageIndex])}
               alt={`${activity.title} - Image ${currentImageIndex + 1}`}
               fill
               className="object-cover"
