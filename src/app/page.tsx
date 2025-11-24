@@ -32,7 +32,7 @@ const activities: Activity[] = [
     message:"Ich würde mich freuen wenn Papa mal in meinen Lieblings-Aquakurs Sonntag bei Arnon mitkommt",
     bookingLink: " https://www.urbansportsclub.com/de/venues/1510",
     studioLink: "https://www.holmesplace.de/clubs/koln-am-gurzenich",
-    images: ["/HolmesplaceCologne/a.jpeg", "/HolmesplaceCologne/b.jpeg", "/HolmesplaceCologne/c.jpeg", "/HolmesplaceDologne/d.jpeg", "/HolmesplaceDologne/e.jpeg"],
+    images: ["/HolmesplaceCologne/a.jpeg", "/HolmesplaceCologne/b.jpeg", "/HolmesplaceCologne/c.jpeg", "/HolmesplaceCologne/d.jpeg", "/HolmesplaceCologne/e.jpeg"],
     suggestedBy: [
       {
         name: "Heike",
@@ -42,12 +42,25 @@ const activities: Activity[] = [
   },
   {
     id: "3",
-    title: "Schwimmen",
+    title: "Just fit 18 am Mediapark in Köln",
     message:
-      "Gelenkschonend, aber sehr effektiv! Schwimmen ist hervorragend für die Herz-Kreislauf-Gesundheit und trainiert alle Muskelgruppen. Dieses Schwimmbad hat tolle Einrichtungen und wir können es zu einer regelmäßigen Sache machen.",
-    bookingLink: "https://example.com/book-swimming",
-    studioLink: "https://example.com/swimming-pool",
-    images: ["/next.svg", "/vercel.svg", "/globe.svg"],
+      "Der Link ist zur Kursüberprüfung. Dort sieht man ob Kurse auch stattfinden. Beispiel Aqua Samstag 14:00 Uhr.",
+    bookingLink: "https://www.justfit-clubs.de/kurse/kursplan/just-fit-18-premium.html",
+    studioLink: "https://www.urbansportsclub.com/de/venues/4991",
+    images: [
+      "/JustFit18/18a.png",
+      "/JustFit18/18b.png", 
+      "/JustFit18/18c.png",
+      "/JustFit18/18d.png",
+      "/JustFit18/18e.png",
+      "/JustFit18/18f.png",
+],
+suggestedBy: [
+  {
+    name: "Heike",
+    avatar: "/Avatars/Heike.jpg",
+  },
+],
   },
 ];
 
@@ -55,8 +68,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#F9F9F9]">
       {/* Hero Section */}
-      <Header />
-      <section className="relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full sm:min-h-[40vh] flex items-center justify-center overflow-hidden">
         {/* Professional gradient using color scheme */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#191E24] via-[#2E3742] to-[#191E24]"></div>
 
@@ -70,6 +82,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+
 
       <main className="container mx-auto px-6 py-12">
         <div className="mb-12 text-center">
