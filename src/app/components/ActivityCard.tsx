@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { getImagePath } from "../utils/imagePath";
 
 export interface SuggestedBy {
   name: string;
@@ -155,7 +156,7 @@ export default function ActivityCard({ activity }: ActivityCardProps) {
                 title={person.name}
               >
                 <img
-                  src={person.avatar}
+                  src={getImagePath(person.avatar)}
                   alt={person.name}
                   width={40}
                   height={40}
