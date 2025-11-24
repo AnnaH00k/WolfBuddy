@@ -7,8 +7,10 @@ const nextConfig: NextConfig = {
   },
   // Fix lockfile warning by explicitly setting the workspace root
   outputFileTracingRoot: process.cwd(),
-  // basePath will be automatically injected by GitHub Actions workflow
-  // For local development, basePath should remain undefined
+  // Set basePath for GitHub Pages (repository name)
+  // For local development, this will be empty
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
 };
 
 export default nextConfig;
