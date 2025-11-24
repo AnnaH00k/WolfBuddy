@@ -19,7 +19,7 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "WolfBuddy - Fitness Aktivitäten",
+  title: "WolfBuddy",
   description: "Dein Fitness-Motivationsbegleiter",
 };
 

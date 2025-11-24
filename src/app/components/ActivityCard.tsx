@@ -10,13 +10,36 @@ export interface SuggestedBy {
   avatar: string;
 }
 
+export type ActivityLinkType = "urbanSports" | "course" | "studioWebsite";
+
+export interface ActivityLink {
+  type: ActivityLinkType;
+  url: string;
+}
+
+const LINK_CONFIG: Record<
+  ActivityLinkType,
+  { label: string; className: string }
+> = {
+  urbanSports: {
+    label: "Urban Sports",
+    className: "bg-[#191E24] text-white shadow-lg hover:bg-[#2E3742] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2E3742]",
+  },
+  course: {
+    label: "Kurse",
+    className:"neumorphic-button",  },
+  studioWebsite: {
+    label: "Studio Website",
+    className: "neumorphic-button-secondary",
+  },
+};
+
 export interface Activity {
   id: string;
   title: string;
   message: string;
-  bookingLink: string;
-  studioLink: string;
   images: string[];
+  links: [ActivityLink, ...ActivityLink[]];
   suggestedBy?: SuggestedBy[];
 }
 
@@ -26,6 +49,7 @@ interface ActivityCardProps {
 
 export default function ActivityCard({ activity }: ActivityCardProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const availableLinks = activity.links.filter((link) => link.url?.trim());
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % activity.images.length);
@@ -125,24 +149,27 @@ export default function ActivityCard({ activity }: ActivityCardProps) {
         <p className="text-[#636E7D] leading-relaxed">{activity.message}</p>
 
         {/* Links */}
-        <div className="flex gap-3 pt-2">
-          <Link
-            href={activity.studioLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 neumorphic-button-secondary text-center py-2.5 px-4 rounded-lg transition-all hover:scale-[1.02]"
-          >
-            Studio-Info
-          </Link>
-          <Link
-            href={activity.bookingLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 neumorphic-button text-center py-2.5 px-4 rounded-lg transition-all hover:scale-[1.02]"
-          >
-            Kurs
-          </Link>
-        </div>
+        {availableLinks.length > 0 && (
+          <div className="flex flex-wrap gap-3 pt-2">
+            {availableLinks.map((link) => {
+              const baseClasses =
+                "flex-1 text-center py-2.5 px-4 rounded-lg transition-all hover:scale-[1.02]";
+              const { label, className } = LINK_CONFIG[link.type];
+
+              return (
+                <Link
+                  key={`${activity.id}-${link.type}`}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${baseClasses} ${className}`}
+                >
+                  {label}
+                </Link>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {/* Suggested By Avatars */}

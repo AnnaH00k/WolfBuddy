@@ -8,10 +8,16 @@ const activities: Activity[] = [
     title: "Fitklusiv Leverkusen",
     message:
       "Ich finde das Studio richtig schön. Sauber hell und freundlich mit Massageliegen. Das wollte ich Papa immer mal zeigen. Wie wär’s mit Yogilates an einem Samstag?",
-    bookingLink:
-      "https://fitklusiv.de/wp-content/uploads/2024/02/Leverkusen-kursplan-1.pdf",
-    studioLink:
-      "https://urbansportsclub.com/de/venues/29440?date=2025-11-24&service_type=1",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://urbansportsclub.com/de/venues/29440?date=2025-11-24&service_type=1",
+      },
+      {
+        type: "course",
+        url: "https://fitklusiv.de/wp-content/uploads/2024/02/Leverkusen-kursplan-1.pdf",
+      },
+    ],
     images: [
       "/FitklusivLeverkusen/1.png",
       "/FitklusivLeverkusen/2.png",
@@ -29,10 +35,25 @@ const activities: Activity[] = [
   {
     id: "2",
     title: "Holmesplace Köln am Gürzenich",
-    message:"Ich würde mich freuen wenn Papa mal in meinen Lieblings-Aquakurs Sonntag bei Arnon mitkommt",
-    bookingLink: " https://www.urbansportsclub.com/de/venues/1510",
-    studioLink: "https://www.holmesplace.de/clubs/koln-am-gurzenich",
-    images: ["/HolmesplaceCologne/a.jpeg", "/HolmesplaceCologne/b.jpeg", "/HolmesplaceCologne/c.jpeg", "/HolmesplaceCologne/d.jpeg", "/HolmesplaceCologne/e.jpeg"],
+    message:
+      "Ich würde mich freuen wenn Papa mal in meinen Lieblings-Aquakurs Sonntag bei Arnon mitkommt",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/1510",
+      },
+      {
+        type: "studioWebsite",
+        url: "https://www.holmesplace.de/clubs/koln-am-gurzenich",
+      },
+    ],
+    images: [
+      "/HolmesplaceCologne/a.jpeg",
+      "/HolmesplaceCologne/b.jpeg",
+      "/HolmesplaceCologne/c.jpeg",
+      "/HolmesplaceCologne/d.jpeg",
+      "/HolmesplaceCologne/e.jpeg",
+    ],
     suggestedBy: [
       {
         name: "Heike",
@@ -45,32 +66,154 @@ const activities: Activity[] = [
     title: "Just fit 18 am Mediapark in Köln",
     message:
       "Der Link ist zur Kursüberprüfung. Dort sieht man ob Kurse auch stattfinden. Beispiel Aqua Samstag 14:00 Uhr.",
-    bookingLink: "https://www.justfit-clubs.de/kurse/kursplan/just-fit-18-premium.html",
-    studioLink: "https://www.urbansportsclub.com/de/venues/4991",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/4991",
+      },
+      {
+        type: "course",
+        url: "https://www.justfit-clubs.de/kurse/kursplan/just-fit-18-premium.html",
+      },
+    ],
     images: [
       "/JustFit18/18a.png",
-      "/JustFit18/18b.png", 
+      "/JustFit18/18b.png",
       "/JustFit18/18c.png",
       "/JustFit18/18d.png",
       "/JustFit18/18e.png",
       "/JustFit18/18f.png",
-],
-suggestedBy: [
-  {
-    name: "Heike",
-    avatar: "/Avatars/Heike.jpg",
+    ],
+    suggestedBy: [
+      {
+        name: "Heike",
+        avatar: "/Avatars/Heike.jpg",
+      },
+    ],
   },
-],
+  {
+    id: "4",
+    title: "Mauritius Therme",
+    message:
+      "Würde ich demnächst mal ausprobieren, gerne mit Papa wenn er Lust hat. Auch Massage möglich.",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/26752",
+      },
+      {
+        type: "studioWebsite",
+        url: "https://therme-mauritius.de/",
+      },
+    ],
+    images: ["/MauritiusTherme/mauritius1.png"],
+    suggestedBy: [
+      {
+        name: "Heike",
+        avatar: "/Avatars/Heike.jpg",
+      },
+    ],
+  },
+  {
+    id: "5",
+    title: "Kraftraum Stark & Mobil",
+    message: "",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/22506",
+      },
+    ],
+    images: [
+      "/Stark&Mobil/s&m0.jpg",
+      "/Stark&Mobil/s&m1.png",
+      "/Stark&Mobil/s&m2.png",
+      "/Stark&Mobil/s&m3.png",
+      "/Stark&Mobil/s&m4.jpg",
+    ],
+    suggestedBy: [
+      {
+        name: "Heike",
+        avatar: "/Avatars/Heike.jpg",
+      },
+    ],
+  },
+  {
+    id: "6",
+    title: "Just Fit 07",
+    message:
+      "Hier gibt es auch tolle bodypump kurse die wir gemeinsam angehen könnten.",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/4979",
+      },
+      {
+        type: "course",
+        url: "https://www.justfit-clubs.de/kurse/kursplan/just-fit-07-classic.html",
+      },
+    ],
+    images: [
+      "/JustFit07/1.png",
+      "/JustFit07/2.png",
+      "/JustFit07/3.png",
+      "/JustFit07/4.png",
+      "/JustFit07/5.png",
+      "/JustFit07/6.png",
+      "/JustFit07/7.png",
+    ],
+    suggestedBy: [
+      {
+        name: "Heike",
+        avatar: "/Avatars/Heike.jpg",
+      },
+      {
+        name: "Anna",
+        avatar: "/Avatars/Anna.jpg",
+      },
+    ],
+  },
+  {
+    id: "7",
+    title: "Sport Palast",
+    message:
+      "Bloß ein katzensprung von zuhause entfernt für die spontane Workout session.",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/9337",
+      },
+      {
+        type: "course",
+        url: "https://www.sportpalast-leichlingen.de/kursbereich.html",
+      },
+    ],
+    images: [
+      "/Sportpalast/sportpalast0.jpg",
+      "/Sportpalast/sportpalast1.webp",
+      "/Sportpalast/sportpalast2.webp",
+      "/Sportpalast/sportpalast3.jpg",
+    ],
+    suggestedBy: [
+      {
+        name: "Heike",
+        avatar: "/Avatars/Heike.jpg",
+      },
+      {
+        name: "Anna",
+        avatar: "/Avatars/Anna.jpg",
+      },
+    ],
   },
 ];
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#F9F9F9]">
+    <div className="min-h-screen bg-[#F9F9F9] cursor-default">
       {/* Hero Section */}
       <section className="relative w-full sm:min-h-[40vh] flex items-center justify-center overflow-hidden">
         {/* Professional gradient using color scheme */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#191E24] via-[#2E3742] to-[#191E24]"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-[#191E24] via-[#2E3742] to-[#191E24]"></div>
 
         <div className="relative container mx-auto px-6 text-center z-10">
           <div className="mb-6"></div>
@@ -78,11 +221,10 @@ export default function Home() {
             WolfBuddy
           </h1>
           <p className="text-white/95 text-xl md:text-2xl max-w-3xl mx-auto mb-8 font-light leading-relaxed">
-            Gemeinsam Zeit verbringen und stark werden
+            Gemeinsam sportlich Zeit verbringen
           </p>
         </div>
       </section>
-
 
       <main className="container mx-auto px-6 py-12">
         <div className="mb-12 text-center">
