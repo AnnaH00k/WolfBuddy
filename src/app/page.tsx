@@ -117,7 +117,7 @@ const activities: Activity[] = [
   {
     id: "5",
     title: "Kraftraum Stark & Mobil",
-    message: "",
+    message: "Auch in Leichlingen könnte man mal ausprobieren.",
     links: [
       {
         type: "urbanSports",
@@ -142,7 +142,7 @@ const activities: Activity[] = [
     id: "6",
     title: "Just Fit 07",
     message:
-      "Hier gibt es auch tolle bodypump kurse die wir gemeinsam angehen könnten.",
+      "Hier gibt es auch tolle Bodypump Kurse die wir gemeinsam angehen könnten. Oder Samstags ein Pilates Kurs.",
     links: [
       {
         type: "urbanSports",
@@ -202,6 +202,31 @@ const activities: Activity[] = [
       {
         name: "Anna",
         avatar: "/Avatars/Anna.jpg",
+      },
+    ],
+  },
+  {
+    id: "8",
+    title: "Fitklusiv Solingen",
+    message:
+      "Fit und Vital in Solingen ist super und wenn man nicht genug hat kann man gleich danach noch Yoga mitmachen. Aber auch Rückenfit ist klasse",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/29442",
+      },
+    ],
+    images: [
+      "/FitklusivSolingen/FitklusivS1.png",
+      "/FitklusivSolingen/FitklusivS2.png",
+      "/FitklusivSolingen/FitklusivS3.png",
+      "/FitklusivSolingen/FitklusivS4.png",
+      "/FitklusivSolingen/FitklusivS5.png",
+    ],
+    suggestedBy: [
+      {
+        name: "Heike",
+        avatar: "/Avatars/Heike.jpg",
       },
     ],
   },
