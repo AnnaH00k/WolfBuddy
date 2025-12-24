@@ -179,7 +179,7 @@ export default function ActivityCard({ activity }: ActivityCardProps) {
             {activity.suggestedBy.map((person, index) => (
               <div
                 key={index}
-                className=" w-10 h-10 rounded-full border-2 border-white shadow-md hover:scale-110 transition-transform cursor-pointer z-10"
+                className="w-10 h-10 rounded-full border-2 border-white shadow-md hover:scale-110 transition-transform cursor-pointer z-10 overflow-hidden"
                 title={person.name}
               >
                 <img
@@ -187,7 +187,7 @@ export default function ActivityCard({ activity }: ActivityCardProps) {
                   alt={person.name}
                   width={40}
                   height={40}
-                  className="object-cover rounded-full"
+                  className="w-full h-full object-cover"
                 />
               </div>
             ))}

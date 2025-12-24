@@ -230,6 +230,55 @@ const activities: Activity[] = [
       },
     ],
   },
+  {
+    id: "9",
+    title: "Padel Bergisch Gladbach Blau-Weiß Hand",
+    message:
+      "Hier können wir zusammen mal Paddel ausprobieren.",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/27194",
+      },
+      {
+        type:"studioWebsite",
+        url:"https://www.blau-weiss-hand.de/padel/"
+      }
+    ],
+    images: [
+      "/1.png",
+  
+    ],
+    suggestedBy: [
+      {
+        name: "Julia",
+        avatar: "/Avatars/Julia.jpg",
+      },
+    ],
+  },
+  {
+    id: "10",
+    title: "Padel Bergisch Gladbach Blau-Weiß Hand",
+    message:
+      "Hier können wir zusammen mal Paddel ausprobieren.",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/29691",
+      },
+    ],
+    images: [
+      "/paddel1.png",
+      "/paddel2.png",
+  
+    ],
+    suggestedBy: [
+      {
+        name: "Julia",
+        avatar: "/Avatars/Julia.jpg",
+      },
+    ],
+  },
 ];
 
 export default function Home() {
