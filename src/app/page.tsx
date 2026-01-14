@@ -215,6 +215,10 @@ const activities: Activity[] = [
         type: "urbanSports",
         url: "https://www.urbansportsclub.com/de/venues/29442",
       },
+      {
+        type: "course",
+        url: "https://fitklusiv.de/wp-content/uploads/2024/11/Solingen-kursplan.pdf",
+      },
     ],
     images: [
       "/FitklusivSolingen/FitklusivS1.png",
