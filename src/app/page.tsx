@@ -283,6 +283,58 @@ const activities: Activity[] = [
       },
     ],
   },
+  {
+    id: "11",
+    title: "EMS Esthetic CityArkaden Wuppertal",
+    message:
+      "Das ist mein EMS Studio in Wuppertal, der Besitzer heißt Raku und macht eine super Einweisung.",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/24115",
+      },
+    ],
+    images: [
+      "/emsWuppertal/emsWuppertal0.png",
+      "/emsWuppertal/emsWuppertal1.png",
+      "/emsWuppertal/emsWuppertal2.png",
+      "/emsWuppertal/emsWuppertal3.png",
+    ],
+    suggestedBy: [
+      {
+        name: "Heike",
+        avatar: "/Avatars/Heike.jpg",
+      },
+    ],
+  },
+  {
+    id: "12",
+    title: "go!ORANGE - EMS Solingen Höhscheid",
+    message:
+      "Das Studio ist in SolingeHöhscheid und deutlich näher, würde ich gerne auch gemeinsam ausprobieren",
+    links: [
+      {
+        type: "urbanSports",
+        url: "https://www.urbansportsclub.com/de/venues/32202",
+      },
+    ],
+    images: [
+      "/emsSolingen/go0.png",
+      "/emsSolingen/go1.png",
+      "/emsSolingen/go2.png",
+      "/emsSolingen/go3.png",
+      "/emsSolingen/go4.png",
+      "/emsSolingen/go5.png",
+      "/emsSolingen/go6.png",
+      
+    ],
+    suggestedBy: [
+      {
+        name: "Heike",
+        avatar: "/Avatars/Heike.jpg",
+      },
+    ],
+  },
 ];
 
 export default function Home() {
